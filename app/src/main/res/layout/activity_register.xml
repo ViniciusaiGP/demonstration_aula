@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_uninga"/>
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuário" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/ivToggleRegisterPassword"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_visibility_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/ivToggleRegisterConfirmPassword"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_visibility_off" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar" />
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+</LinearLayout>
